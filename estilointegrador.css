@@ -1,0 +1,125 @@
+.navbar{
+    background-color: rgb(75, 74, 74);
+    filter: brightness(75%);
+    font-weight:bold;
+}
+
+.nav-link{
+    color:rgb(197, 191, 191);
+}
+
+
+
+#tickets{
+    color:rgb(64, 238, 64);
+}
+
+#logo{
+    width:40%;
+}
+
+.carousel-caption{
+    position:absolute;
+    top:50%;
+    left:65%;
+    text-align:right;
+    width:25%;
+}
+
+#fotobsas{
+    filter: brightness(50%);
+}
+
+#boton1{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding:10px;
+    margin:5px;
+    color:white;
+}
+
+#boton2{
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding:10px;
+    margin:5px;
+    color:white;
+}
+
+.contenedor-cards{
+    display:flex;    
+    justify-content:center;
+    width:80%;
+}
+
+.java{
+    background-color: rgb(230, 189, 86);
+    color:black;
+}
+
+.react{
+    background-color: rgb(3, 158, 158);
+    color:white;
+}
+
+.negocios{
+    background-color: gray;
+    color: black;
+}
+
+.startups{
+    background-color: red;
+    color: white;
+}
+
+#bsas{
+    background-color: rgb(75, 74, 74);
+    color:white;
+    border-left: 1px solid white;
+}
+
+#boton3{
+    background-color: transparent;
+    color: white;
+    border:1px solid white;
+    border-radius: 5px;
+}
+
+#octubre{
+    margin:0px;
+    padding:0px;       
+}
+
+#submit{
+    background-color: rgb(106, 156, 30);
+    color:white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#foot{
+    background-color:rgb(22, 80, 97);
+    color:white;
+    height:5vw;     
+}
+
+.center{
+    text-align: center;
+}
+
+#charla{
+    color:black;
+    text-decoration: dotted black;
+}
+
+a:link, a:visited{
+    color:white;
+    text-decoration: none;
+}
+
+#titulo-form{
+    width:50%;
+    text-align: center;
+}
