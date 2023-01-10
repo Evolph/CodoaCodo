@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>Registro de Pedido</title>
+
+    <!-- Bootstrap core CSS -->
+		<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="./css/form-validation.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="./Imagenes/JOYSTICK STICKER CMYK.jpg" alt="" width="72" height="100">
+    <h2>Formulario de Pedido</h2>
+    <p class="lead">La fecha de entrega será coordinada telefónicamente.</p>
+  </div>
+
+
+    <div class="col-md-12  text-center">
+      <h4 class="mb-3">Tu pedido</h4>
+      <form class="needs-validation" novalidate action="RealizarPedido" method="post">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Nombre</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Tu nombre" value="" required>
+            <div class="invalid-feedback">
+              Faltó ingresar el nombre.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Apellido</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Tu apellido" value="" required>
+            <div class="invalid-feedback">
+              Faltó ingresar el apellido.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="username">Nombre de Usuario</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">@</span>
+            </div>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Usuario" required>
+            <div class="invalid-feedback" style="width: 100%;">
+              Faltó ingresar el usuario.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Email <span class="text-muted">(Optional)</span></label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="tumail@gmail.com">
+          <div class="invalid-feedback">
+            El Email parece inválido.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="address">Lugar de Entrega</label>
+          <input type="text" class="form-control" id="address" name="address" placeholder="Calle, n°, localidad..." required>
+          <div class="invalid-feedback">
+            Faltó ingresar el domicilio de entrega.
+          </div>
+        </div>
+
+        
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Localidad</label>
+            <select class="custom-select d-block w-100" id="country" name="country" required>
+              <option value="">Seleccioná...</option>              
+              <option value="1">La Matanza</option>
+              <option value="2">Gral. Pueyrredón</option>
+              <option value="3">Agronomía</option>
+              <option value="4">Caballito</option>
+              <option value="5">Antofagasta</option>
+              <option value="6">MIraflores</option>
+              <option value="7">Resistencia</option>
+              <option value="8">Enrique Urién</option>
+              <option value="9">Epuyén</option>
+              <option value="10">El Maitén</option>
+              <option value="11">Itá Ibaté</option>
+              <option value="12">General Alvear</option>
+              <option value="13">Cosquín</option>
+              <option value="14">Córdoba Capital</option>
+              <option value="15">Colón</option>
+              <option value="16">Concordia</option>
+              <option value="17">Formosa</option>
+              <option value="18">Clorinda</option>
+              <option value="19">Humahuaca</option>
+              <option value="20">Palpalá</option>
+              <option value="21">Victorica</option>
+              <option value="22">Santa Rosa</option>
+              <option value="23">Anillaco</option>
+              <option value="24">Aimogasta</option>
+              <option value="25">Guaymallen</option>
+              <option value="26">Gpdpy Cruz</option>
+              <option value="27">Posadas</option>
+              <option value="28">Garupa</option>
+              <option value="29">Caviahue</option>
+              <option value="30">Copahue</option>
+              <option value="31">El Bolsón</option>
+              <option value="32">Bariloche</option>
+              <option value="33">Cafayate</option>
+              <option value="34">Molinos</option>
+              <option value="35">San Juan</option>
+              <option value="36">Santa Lucia</option>
+              <option value="37">Concaran</option>
+              <option value="38">El Trapiche</option>
+              <option value="39">Río Gallegos</option>
+              <option value="40">Los Antiguos</option>
+              <option value="41">Arroyo Seco</option>
+              <option value="42">Las Toscas</option>
+              <option value="43">Frías</option>
+              <option value="44">Garza</option>
+              <option value="45">Usuahia</option>
+              <option value="46">Río Grande</option>
+              <option value="47">Tafí del Valle</option>
+              <option value="48">Lules</option>
+
+            </select>
+            <div class="invalid-feedback">
+              Seleccioná una localidad válida.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">Provincia</label>
+            <select class="custom-select d-block w-100" id="state" name="state" required>
+              <option value="">Seleccioná...</option>              
+              <option value="1">Buenos Aires</option>		  
+              <option value="2">CABA</option>
+              <option value="3">Catamarca</option>
+              <option value="4">Chaco</option>
+              <option value="5">Chubut</option>
+              <option value="6">Córdoba</option>
+              <option value="7">Corrientes</option>
+              <option value="8">Entre Rios</option>
+              <option value="9">Formosa</option>
+              <option value="10">Jujuy</option>
+              <option value="11">La Pampa</option>
+              <option value="12">La Rioja</option>
+              <option value="13">Mendoza</option>
+              <option value="14">Misiones</option>
+              <option value="15">Neuquén</option>
+              <option value="16">Río Negro</option>
+              <option value="17">Salta</option>
+              <option value="18">San Juan</option>
+              <option value="19">San Luis</option>
+              <option value="20">Santa Cruz</option>
+              <option value="21">Santa Fe</option>
+              <option value="22">Santiago del Estero</option>
+              <option value="23">Tierra del Fuego</option>
+              <option value="24">Tucumán</option>
+
+
+            </select>
+            <div class="invalid-feedback">
+              Seleccioná una provincia válida.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="zip">Cod.Postal</label>
+            <input type="text" class="form-control" id="zip" name="zip" placeholder="" required>
+            <div class="invalid-feedback">
+              Faltó ingresar el Código Postal.
+            </div>
+          </div>
+        </div>
+
+        
+        <hr class="mb-6">
+
+        <h4 class="mb-3">Forma de Pago</h4>
+
+        <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" value="C" checked required>
+            <label class="custom-control-label" for="credit">Tarjeta de Crédito</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="debit" name="paymentMethod" type="radio" value="M" class="custom-control-input" required>
+            <label class="custom-control-label" for="debit">Mercado Pago</label>
+          </div>
+         
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cc-name">Nombre del Titular de la Tarjeta</label>
+            <input type="text" class="form-control" id="cc-name" name="cc-name" placeholder="" required>
+            <small class="text-muted">Nombre como se muestra en la tarjeta</small>
+            <div class="invalid-feedback">
+              El nombre debe ser ingresado.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cc-number">Número de la tarjeta</label>
+            <input type="text" class="form-control" id="cc-number" name="cc-number" placeholder="" required>
+            <div class="invalid-feedback">
+              El n° es obligatorio. 
+            </div>
+          </div>
+        </div>
+        <div class="row">
+		          <div class="col-md-3 mb-3"></div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-expiration">Fecha de Vto.</label>
+            <input type="text" class="form-control" id="cc-expiration" name="cc-expiration" placeholder="" required>
+            <div class="invalid-feedback">
+              Falta ingresar la fecha de Vto.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-cvv">Código</label>
+            <input type="text" class="form-control" id="cc-cvv" name="cc-cvv" placeholder="" required>
+            <div class="invalid-feedback">
+              N° de seguridad obligatorio.
+            </div>
+          </div>
+        </div>
+		        <hr class="mb-4">	
+		<div class="row">
+		<div class="col-4"></div>				
+		<div class="col-4">
+        <button class="btn btn-danger btn-lg btn-block" type="submit">Ingresar la Solicitud</button>
+		</div>
+		</div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2012-2022 Guiku Store</p>
+    
+  </footer>
+</div>
+		<script src="./js/jquery.js"></script>
+        <script src="./js/form-validation.js"></script></body>
+</html>
